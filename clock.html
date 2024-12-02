@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="clock.js" defer></script>
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        background: darkslategrey;
+      }
+      .circle {
+        background: #3e8383;
+        border: 3px solid;
+        color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="hours circle">
+        <h1 class="h"></h1>
+        <span>Hours</span>
+      </div>
+
+      <div class="minutes circle">
+        <h1 class="m"></h1>
+        <span>Minutes</span>
+      </div>
+      <div class="seconds circle">
+        <h1 class="s"></h1>
+        <span>Seconds</span>
+      </div>
+    </div>
+  </body>
+</html>
