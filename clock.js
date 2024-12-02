@@ -14,6 +14,7 @@ $(document).ready(function()
        if(b > 12) 
         {
         b=b-12;
+    
         
     }
     if(b<10){
